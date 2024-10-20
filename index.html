@@ -9,7 +9,7 @@
     <meta name="author" content="Aizhan Mambetalieva">
     <title>Über mich - Aizhan Mambetalieva</title>
     <style>
-       body {
+        body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -26,6 +26,23 @@
         header h1 {
             margin: 0;
             font-size: 2.5em;
+        }
+
+        nav {
+            margin: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
         }
 
         .container {
@@ -96,10 +113,15 @@
 
     <header>
         <h1>Aizhan Mambetalieva</h1>
+        <nav>
+            <a href="#about">Über mich</a>
+            <a href="#skills">Fähigkeiten</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
     </header>
 
     <div class="container">
-        <div class="about-me">
+        <div id="about" class="about-me">
             <h2>Über mich</h2>
             <p>
                 Hallo! Ich bin Aizhan Mambetalieva, eine leidenschaftliche Webentwicklerin und IT-Spezialistin aus
@@ -114,7 +136,7 @@
             </p>
         </div>
 
-        <div class="skills">
+        <div id="skills" class="skills">
             <h2>Fähigkeiten</h2>
             <ul>
                 <li>HTML, CSS, JavaScript, Java</li>
@@ -123,8 +145,12 @@
                 <li>MongoDB, MySQL</li>
                 <li>Git und GitHub</li>
                 <li>Responsive Webdesign</li>
-
             </ul>
+        </div>
+        
+        <div id="contact" class="contact">
+            <h2>Kontakt</h2>
+            <p>Sie können mich unter meiner E-Mail-Adresse erreichen: <div aizhanai321@gmail.com=""></div>.</p>
         </div>
     </div>
 
